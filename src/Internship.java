@@ -44,11 +44,14 @@ public class Internship extends Candidates {
     public void input(){
         Scanner sc = new Scanner(System.in);
         super.input();
-        System.out.println("Majors: ");
+        System.out.print("Majors: ");
         this.Majors=sc.nextLine();
-        System.out.println("Semester: ");
+        System.out.print("Semester: ");
         this.Semester=sc.nextLine();
-        System.out.println("University_name: ");
+        System.out.print("University_name: ");
         this.University_name=sc.nextLine();
+    }
+    public String toString(){
+        return super.toString()+" | "+this.getMajors()+" | "+this.getSemester()+" | "+this.getUniversity_name();
     }
 }

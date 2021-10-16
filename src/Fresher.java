@@ -43,11 +43,11 @@ public class Fresher extends Candidates {
     public void input(){
         Scanner sc = new Scanner(System.in);
         super.input();
-        System.out.println("graduationDate: ");
+        System.out.print("graduationDate: ");
         this.graduationDate=sc.nextLine();
         while(true){
             try{
-                System.out.println("graduationRank: ");
+                System.out.print("graduationRank: ");
                 String a= sc.nextLine();
                 if(a.compareTo("Excellence")==0||a.compareTo("Good")==0||a.compareTo("Fair")==0||a.compareTo("Poor")==0){
                     this.graduationRank=a;
@@ -59,6 +59,9 @@ public class Fresher extends Candidates {
                 System.out.println(e);
             }
         }
+    }
+    public String toString(){
+        return super.toString()+" | "+this.getGraduationDate()+" | "+this.getGraduationRank();       
     }
     
 }

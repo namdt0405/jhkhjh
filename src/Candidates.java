@@ -111,15 +111,15 @@ public class Candidates {
     }
     public void input(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("ID: ");
+        System.out.print("ID: ");
         this.id=sc.nextLine();
-        System.out.println("firstName: ");
+        System.out.print("firstName: ");
         this.firstName=sc.nextLine();
-        System.out.println("lastName: ");
+        System.out.print("lastName: ");
         this.lastName=sc.nextLine();
         while(true){
             try{
-                System.out.println("birthDate: ");
+                System.out.print("birthDate: ");
                 int a= Integer.parseInt(sc.nextLine());
                 if(a>=1000){
                     this.birthDate=a;
@@ -131,11 +131,11 @@ public class Candidates {
                 System.out.println(e);
             }
         }
-        System.out.println("address: ");
+        System.out.print("address: ");
         this.address=sc.nextLine();
                 while(true){
             try{
-                System.out.println("phone: ");
+                System.out.print("phone: ");
                 String a= sc.nextLine();
                 if(a.length()>=10){
                     this.phone=a;
@@ -148,9 +148,9 @@ public class Candidates {
             }
         }
         
-        System.out.println("email: ");
+        System.out.print("email: ");
         this.email=sc.nextLine();
-        System.out.println("typeCandidate: ");
+        System.out.print("typeCandidate: ");
         this.typeCandidate=sc.nextInt();
    
     }

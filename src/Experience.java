@@ -49,7 +49,7 @@ public class Experience extends Candidates {
         super.input();
         while(true){
             try{
-                System.out.println("yearExperience: ");
+                System.out.print("yearExperience: ");
                 int a= Integer.parseInt(sc.nextLine());
                 if(a>=0&&a<=100){
                     this.yearExperience=a;
@@ -61,9 +61,12 @@ public class Experience extends Candidates {
                 System.out.println(e);
             }
         }
-        System.out.println("professionalSkill: ");
+        System.out.print("professionalSkill: ");
         this.professionalSkill=sc.nextLine();
         
+    }
+    public String toString(){
+        return super.toString()+" | "+this.getYearExperience()+" | "+this.getProfessionalSkill();  
     }
 
     
