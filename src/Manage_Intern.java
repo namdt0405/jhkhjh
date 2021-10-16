@@ -9,10 +9,10 @@ import java.util.List;
 
 /**
  *
- * @author ttaad
+ * @author admin
  */
-public class Manage_EX {
-    public int check(List<Experience>a,String id){
+public class Manage_Intern {
+       public int check(List<Internship>a,String id){
         for(int i=0;i<a.size();i++){
             if(a.get(i).getId().compareTo(id)==0){
                 return 0;
@@ -20,9 +20,9 @@ public class Manage_EX {
         }
         return 1;
     }
-    public void create(List<Experience>a){
+        public void create(List<Internship>a){
         //String birth=b.getBirthDate();
-        Experience b= new Experience();
+        Internship b= new Internship();
         b.input();
         if(check(a,b.getId())==1){
             a.add(b);
@@ -32,8 +32,8 @@ public class Manage_EX {
         }
         
     }
-    public void search(List<Experience>a,String name){
-        int count =0;
+        public void search(List<Internship>a,String name){
+            int count=0;
         for(int i=0;i<a.size();i++){
             if(a.get(i).getFirstName().compareToIgnoreCase(name)==0||a.get(i).getLastName().compareToIgnoreCase(name)==0){
                 System.out.println(a.get(i).toString());
@@ -41,8 +41,9 @@ public class Manage_EX {
                 count++;
             }
         }
-        if(count == a.size()){
+        if(count==a.size()){
             System.out.println("not found this candidate");
         }
     }
+
 }
