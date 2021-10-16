@@ -15,8 +15,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Experience> a = new ArrayList<Experience>();
-        Manage_EX b= new Manage_EX();
-        b.create(a);
-        System.out.println(a.get(0));
+        List<Fresher> b= new ArrayList<Fresher>();
+        List<Internship> c= new ArrayList<Internship>();
+        //memu
+        System.out.println("");
     }
 }
