@@ -132,6 +132,7 @@ public class Candidates {
             }
         }
         
+        //dfvdearfeafref        
         System.out.print("email: ");
         this.email=sc.nextLine();
         System.out.print("typeCandidate: ");
